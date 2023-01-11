@@ -15,7 +15,7 @@ finger_tips=[8,12,16,20]
 def drawHandLandmarks(image,hand_landmarks):
     if hand_landmarks:
 
-        for landmarks in hand_landmarks:
+        for lm_list in hand_landmarks:
             mp_drawing.draw_landmarks(image,landmarks,mp_hands.HAND_CONNECTIONS)
 
             
